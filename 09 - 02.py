@@ -4,9 +4,10 @@ def musica():
 	disco = input("ingresa el disco que quieres: ")
 	cantidad = int(input("ingresa la cantidad: "))
 	if cantidad <= 0:
-		print("seas payaso ps, pa eso ejecutas el programa?")
+		print("selecciona una opcion correcta po favor")
 		return
 	poster = 0
+
 	dvd = {
 		"salsa": 56.00,
 		"rock": 63.00,
@@ -36,6 +37,7 @@ cantidad: {}
 descuento: {}
 total: {}
 poster: {}""".format(precio1, cantidad, descuento, total, poster))
+
 musica()
 
 
