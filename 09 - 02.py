@@ -4,7 +4,7 @@ def musica():
 	disco = input("ingresa el disco que quieres: ")
 	cantidad = int(input("ingresa la cantidad: "))
 	if cantidad <= 0:
-		print("selecciona una opcion correcta po favor")
+		print("selecciona una opcion correcta por favor")
 		return
 	poster = 0
 
