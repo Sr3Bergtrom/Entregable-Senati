@@ -11,23 +11,23 @@ if opcion == '1' :
     print('-----(turno mañana = M), (turno tarde = T), (turno noche = N)-----')
 
     Turno = ''
-    while Turno != 'M' and Turno != 'T' and Turno != 'N':
+    while Turno != 'M' and Turno != 'T' and Turno != 'N' and Turno != 'm' and Turno != 't' and Turno != 'n':
           Turno= input('Turno de trabajo realizado: ')
 
-    if Turno == 'M':
+    if Turno == 'M' or Turno == 'm':
        Salario= 37.00
-    elif Turno == 'T':
+    elif Turno == 'T' or Turno == 't':
        Salario= 38.20
-    elif Turno == 'N':
+    elif Turno == 'N' or Turno == 'n':
        Salario= 38.50
 
     Pago = Horas * Salario
 
-    if Turno == 'N' and Pago > 200 and Pago < 500:
+    if (Turno == 'N'or Turno == 'n') and Pago > 200 and Pago < 500:
         Pago = Pago - 0.15 * Pago
         print('El Pago es: ', Pago)
 
-    elif Turno == 'N' and Pago > 800 and Pago < 1000:
+    elif (Turno == 'N'or Turno == 'n') and Pago > 800 and Pago < 1000:
         Pago = Pago - 0.17 * Pago
         print('El Pago es: ', Pago)
 
